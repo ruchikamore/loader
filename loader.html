@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            height: 150px;
+            width: 150px;
+           position:relative;
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            border: 20px solid rgb(49, 7, 7);
+            border-radius: 50%;
+            border-color: rgb(221, 196, 255);
+            border-top-color: black;
+
+           animation: load 3s infinite;
+          
+
+        }
+        img{
+            height: 95%;
+            width: 95%;
+            border-radius:60%;
+            position: absolute;
+            padding: 25px;
+       
+        }
+        @keyframes load{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" alt="0">
+    <div class="child">
+        
+    </div>
+    </div>
+</body>
+</html>
